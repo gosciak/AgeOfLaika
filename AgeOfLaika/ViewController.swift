@@ -28,12 +28,14 @@ class ViewController: UIViewController {
             let humanYearsFromTextField = enterHumanYearsTextField.text.toInt()!
             let dogYearsMultiplier = 7
             dogYearsLabel.text = "\(humanYearsFromTextField * dogYearsMultiplier)" + " in Human Years"
-            enterHumanYearsTextField.text = ""
-            dogYearsLabel.hidden = false
+        }
+        else {
+            dogYearsLabel.text = ""
         }
         
+        enterHumanYearsTextField.text = ""
+        dogYearsLabel.hidden = false
         enterHumanYearsTextField.resignFirstResponder()
-      
         
     }
 
@@ -44,20 +46,15 @@ class ViewController: UIViewController {
         
         if doubleHumanYearsFromTextField <= 2 {
             realDogYears = (10.5 * doubleHumanYearsFromTextField)
-            dogYearsLabel.text = "\(realDogYears)" + " in Human Years"
-            enterHumanYearsTextField.text = ""
-            enterHumanYearsTextField.resignFirstResponder()
-            dogYearsLabel.hidden = false
         }
-            else {
-                realDogYears = (2 * 10.5) + (doubleDogYearsMultiplier * 4)
-                dogYearsLabel.text = "\(realDogYears)" + " in Human Years"
-                enterHumanYearsTextField.text = ""
-                enterHumanYearsTextField.resignFirstResponder()
-                dogYearsLabel.hidden = false
-    
-            }
-            
+        else {
+            realDogYears = (2 * 10.5) + (doubleDogYearsMultiplier * 4)
+        }
+        
+        dogYearsLabel.text = "\(realDogYears)" + " in Real Human Years"
+        enterHumanYearsTextField.text = ""
+        enterHumanYearsTextField.resignFirstResponder()
+        dogYearsLabel.hidden = false
         }
     }
 
