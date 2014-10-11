@@ -13,6 +13,7 @@
 		8CAFABAE19E8824900B6CF32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CAFABAD19E8824900B6CF32 /* Images.xcassets */; };
 		8CAFABB119E8824900B6CF32 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CAFABAF19E8824900B6CF32 /* LaunchScreen.xib */; };
 		8CAFABBD19E8824A00B6CF32 /* AgeOfLaikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFABBC19E8824A00B6CF32 /* AgeOfLaikaTests.swift */; };
+		8CAFABC719E8834D00B6CF32 /* AgeOfLaika.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CAFABC619E8834D00B6CF32 /* AgeOfLaika.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8CAFABB619E8824A00B6CF32 /* AgeOfLaikaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgeOfLaikaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CAFABBB19E8824A00B6CF32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CAFABBC19E8824A00B6CF32 /* AgeOfLaikaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeOfLaikaTests.swift; sourceTree = "<group>"; };
+		8CAFABC619E8834D00B6CF32 /* AgeOfLaika.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AgeOfLaika.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		8CAFABA419E8824900B6CF32 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8CAFABC619E8834D00B6CF32 /* AgeOfLaika.jpg */,
 				8CAFABA519E8824900B6CF32 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CAFABAC19E8824900B6CF32 /* Main.storyboard in Resources */,
+				8CAFABC719E8834D00B6CF32 /* AgeOfLaika.jpg in Resources */,
 				8CAFABB119E8824900B6CF32 /* LaunchScreen.xib in Resources */,
 				8CAFABAE19E8824900B6CF32 /* Images.xcassets in Resources */,
 			);
@@ -339,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AgeOfLaika/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AgeOfLaika/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
