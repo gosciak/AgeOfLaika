@@ -24,15 +24,41 @@ class ViewController: UIViewController {
     }
 
     @IBAction func convertToDogYearsButtonPressed(sender: UIButton) {
-        let humanYearsFromTextField = enterHumanYearsTextField.text.toInt()!
-        let dogYearsMultiplier = 7
-        dogYearsLabel.text = "\(humanYearsFromTextField * dogYearsMultiplier)" + " in Human Years"
-        enterHumanYearsTextField.text = ""
+        if (enterHumanYearsTextField.text != ""){
+            let humanYearsFromTextField = enterHumanYearsTextField.text.toInt()!
+            let dogYearsMultiplier = 7
+            dogYearsLabel.text = "\(humanYearsFromTextField * dogYearsMultiplier)" + " in Human Years"
+            enterHumanYearsTextField.text = ""
+            dogYearsLabel.hidden = false
+        }
+        
         enterHumanYearsTextField.resignFirstResponder()
-        dogYearsLabel.hidden = false
       
         
     }
 
-}
+    @IBAction func convertToRealDogYearsButtonPressed(sender: UIButton) {
+        var doubleHumanYearsFromTextField = Double((enterHumanYearsTextField.text as NSString).doubleValue)
+        var realDogYears:Double
+        var doubleDogYearsMultiplier:Double = doubleHumanYearsFromTextField - 2
+        
+        if doubleHumanYearsFromTextField <= 2 {
+            realDogYears = (10.5 * doubleHumanYearsFromTextField)
+            dogYearsLabel.text = "\(realDogYears)" + " in Human Years"
+            enterHumanYearsTextField.text = ""
+            enterHumanYearsTextField.resignFirstResponder()
+            dogYearsLabel.hidden = false
+        }
+            else {
+                realDogYears = (2 * 10.5) + (doubleDogYearsMultiplier * 4)
+                dogYearsLabel.text = "\(realDogYears)" + " in Human Years"
+                enterHumanYearsTextField.text = ""
+                enterHumanYearsTextField.resignFirstResponder()
+                dogYearsLabel.hidden = false
+    
+            }
+            
+        }
+    }
+
 
