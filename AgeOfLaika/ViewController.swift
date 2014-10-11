@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func convertToRealDogYearsButtonPressed(sender: UIButton) {
-        var doubleHumanYearsFromTextField = Double((enterHumanYearsTextField.text as NSString).doubleValue)
+        let doubleHumanYearsFromTextField = Double((enterHumanYearsTextField.text as NSString).doubleValue)
         var realDogYears:Double
         var doubleDogYearsMultiplier:Double = doubleHumanYearsFromTextField - 2
         
